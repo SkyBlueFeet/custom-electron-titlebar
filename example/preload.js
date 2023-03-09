@@ -15,7 +15,8 @@ window.addEventListener('DOMContentLoaded', () => {
     //menuPosition: 'bottom',
     //menu: null // = do not automatically use Menu.applicationMenu
     menuTransparent: 80,
-    menuHoverColor:Color.fromHex("#ccc").transparent(.45)
+    menuHoverColor:Color.fromHex("#ccc").transparent(.45),
+    // elementRadius:"5px"
   })
 
   const replaceText = (selector, text) => {

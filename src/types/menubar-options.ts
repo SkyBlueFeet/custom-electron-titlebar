@@ -43,4 +43,10 @@ export interface MenubarOptions {
      * 菜单按钮Hover颜色
      */
     menuHoverColor?: Color;
+
+    /**
+     * 元素圆角
+     * @default 5px
+     */
+    elementRadius?: string;
 }

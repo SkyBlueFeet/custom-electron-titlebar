@@ -343,9 +343,15 @@ export default class Titlebar {
 			});
 		}
 
+
+
 		if (this._options.menuHoverColor) {
 			// this._options.menuHoverColor.
 			document.body.style.setProperty("--menu-button-color", this._options.menuHoverColor.toString())
+		}
+
+		if(this._options.elementRadius){
+			document.body.style.setProperty("--menu-radius", this._options.elementRadius)
 		}
 	}
 

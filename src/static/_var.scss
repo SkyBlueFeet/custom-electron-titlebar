@@ -1,0 +1,9 @@
+:root{
+    --menu-button-color:rgba(255,255,255,0.1);
+    --menu-radius:5px;
+}
+
+
+@mixin transition {
+    transition: .2s;
+}
