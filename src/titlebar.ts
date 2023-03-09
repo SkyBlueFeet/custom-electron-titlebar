@@ -342,6 +342,11 @@ export default class Titlebar {
 				separatorColor: foregroundColor
 			});
 		}
+
+		if (this._options.menuHoverColor) {
+			// this._options.menuHoverColor.
+			document.body.style.setProperty("--menu-button-color", this._options.menuHoverColor.toString())
+		}
 	}
 
 	/**

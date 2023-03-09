@@ -32,10 +32,15 @@ export interface MenubarOptions {
      * The menu conatiner transparency
      * **The default is 100**
      */
-     menuTransparency?: number;
+    menuTransparency?: number;
     /**
      * The color of the svg icons in the menu
      * **The default is black**
      */
     svgColor?: Color;
+
+    /**
+     * 菜单按钮Hover颜色
+     */
+    menuHoverColor?: Color;
 }

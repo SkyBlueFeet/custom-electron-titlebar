@@ -1,3 +1,7 @@
+:root{
+    --menu-button-color:rgba(255,255,255,0.1);
+}
+
 .cet-menubar {
     display: flex;
     flex-shrink: 1;
@@ -43,7 +47,7 @@
             &:focus,
             &.open,
             &:hover {
-                background-color: rgba(255, 255, 255, 0.1);
+                background-color: var(--menu-button-color);
             }
         }
     }

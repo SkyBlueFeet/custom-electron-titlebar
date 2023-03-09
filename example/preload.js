@@ -10,10 +10,12 @@ window.addEventListener('DOMContentLoaded', () => {
     backgroundColor: Color.fromHex("#262626"),
     //itemBackgroundColor: Color.fromHex("#ffffff"),
     svgColor: Color.WHITE,
+    itemBackgroundColor:Color.fromHex("#ccc"),
     icon: path.join(__dirname, '/assets/images', '/icon.svg'),
     //menuPosition: 'bottom',
     //menu: null // = do not automatically use Menu.applicationMenu
     menuTransparent: 80,
+    menuHoverColor:Color.fromHex("#ccc").transparent(.45)
   })
 
   const replaceText = (selector, text) => {

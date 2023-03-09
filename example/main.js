@@ -12,7 +12,12 @@ const createWindow = () => {
     width: 800,
     height: 600,
     titleBarStyle: 'hidden',
-    frame: false, // needed if process.versions.electron < 14
+    titleBarOverlay: {
+      color: '#262626',
+      symbolColor: '#fff',
+      height: 30
+    },
+    frame: true, // needed if process.versions.electron < 14
     webPreferences: {
       sandbox: false,
       preload: path.join(__dirname, 'preload.js')
