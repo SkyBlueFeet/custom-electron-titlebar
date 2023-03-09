@@ -384,7 +384,7 @@ export default class Titlebar {
 			} else {
 				show(this._titlebar);
 				if (this._options.menuPosition === 'bottom') this._container.style.top = BOTTOM_TITLEBAR_HEIGHT;
-				else this._container.style.top = isMacintosh ? TOP_TITLEBAR_HEIGHT_MAC : TOP_TITLEBAR_HEIGHT_WIN;
+				else this._container.style.top = isMacintosh ? TOP_TITLEBAR_HEIGHT_MAC : "0px";
 			}
 		}
 	}
@@ -473,6 +473,7 @@ export default class Titlebar {
 		this._options.menuPosition = menuPosition;
 		this._titlebar.style.height = menuPosition === 'bottom' ? BOTTOM_TITLEBAR_HEIGHT : height;
 		this._container.style.top = menuPosition === 'bottom' ? BOTTOM_TITLEBAR_HEIGHT : height;
+
 
 		if (menuPosition === 'bottom') addClass(this._menubarContainer, 'bottom');
 		else removeClass(this._menubarContainer, 'bottom');
